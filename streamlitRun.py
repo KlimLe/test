@@ -1,6 +1,7 @@
 import subprocess
 import requests
 import gdown
+import streamlit
 
 # Download the model from Google Drive
 file_id = '1L69so1We0E67X0bRHSOkEsvPYeSIEnr6'
