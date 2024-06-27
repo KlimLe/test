@@ -10,13 +10,26 @@ from textblob import TextBlob
 import re
 from sklearn.preprocessing import StandardScaler
 import gdown
+import os
 
+
+# Definiere die Datei-ID und die URL
+file_id = '1iGO6l1e6zgGFKRVmwHkxNn4f0kuNBAF6'
+url = f'https://drive.google.com/uc?export=download&id={file_id}'
+output = 'trained_model.h5'
+
+# Überprüfe, ob die Datei bereits existiert
+if not os.path.exists(output):
+    print(f'Downloading {output}...')
+    gdown.download(url, output, quiet=False)
+else:
+    print(f'{output} already exists, skipping download.')
+    
 # Download the model from Google Drive
-#file_id = '1L69so1We0E67X0bRHSOkEsvPYeSIEnr6'
+#file_id = '1iGO6l1e6zgGFKRVmwHkxNn4f0kuNBAF6'
 #url = f'https://drive.google.com/uc?export=download&id={file_id}'
 #output = 'trained_model.h5'
 #gdown.download(url, output, quiet=False)
-
 
 # Define the company tickers and names
 companies_to_focus = {
