@@ -1,5 +1,6 @@
 import subprocess
 import requests
+import gdown
 
 # Download the model from Google Drive
 file_id = '1L69so1We0E67X0bRHSOkEsvPYeSIEnr6'
