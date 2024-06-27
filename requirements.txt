@@ -1,0 +1,15 @@
+matplotlib==3.8.4
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+scipy==1.13.0
+seaborn==0.13.2
+tensorflow==2.16.1
+streamlit==1.36.0
+yfinance==0.2.40
+transformers==4.41.2
+tf-keras==2.16.0
+plotly==5.22.0
+textblob==0.18.0.post0
+gdown==5.2.0
+h5py
